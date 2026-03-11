@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisuk Kwon | Pianist</title>
+    <style>
+        /* 기본 설정 */
+        body { margin: 0; padding: 0; font-family: 'Georgia', serif; line-height: 1.8; color: #fff; background-color: #000; overflow-x: hidden; }
+        
+        /* 첫 화면: 배경 사진(1000.jpg) 및 이름 한 줄 */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('1000.jpg') center center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        header h1 { 
+            font-size: clamp(2rem, 10vw, 4rem); 
+            letter-spacing: 8px; 
+            margin: 0; 
+            text-transform: uppercase; 
+            font-weight: 300;
+            white-space: nowrap;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.6);
+        }
+
+        /* 메뉴바 */
+        nav { 
+            display: flex; 
+            justify-content: flex-start; 
+            background: #000; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            border-bottom: 1px solid #333;overflow-x: auto; 
+        }
+        nav a { padding: 18px 16px; color: #fff; text-decoration: none; font-size: 0.8rem; letter-spacing: 2px; font-weight: bold; transition: 0.3s; }
+        nav a:hover { color: #888; }
+
+        /* 섹션 공통 */
+        .section { padding: 80px 30px; max-width: 900px; margin: 0 auto; }
+        h2 { font-size: 1.6rem; text-align: center; margin-bottom: 50px; letter-spacing: 4px; text-transform: uppercase; }
+
+        /* Biography 영역 */
+        .bio-container { display: flex; flex-direction: column; align-items: center; gap: 40px; }
+        .bio-img { width: 100%; max-width: 500px; height: auto; box-shadow: 10px 10px 0px #000; }
+        .bio-text { font-size: 1.05rem; line-height: 2; text-align: left; }
+
+        /* 일정 표 */
+        .schedule-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .schedule-table td { padding: 20px 15px; border-bottom: 1px solid #eee; font-size: 0.95rem; }
+        .date-col { font-weight: bold; color: #555; width: 150px; }
+
+        /* 연락처 및 갤러리 */
+        .contact-info { text-align: center; margin-bottom: 60px; font-size: 1.1rem; letter-spacing: 1px; }
+        .contact-info a { color: #fff; text-decoration: underline; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
+        .gallery img { width: 100%; height: 250px; object-fit: cover; }
+
+        footer { text-align: center; padding: 60px; font-size: 0.75rem; color: #999; border-top: 1px solid #eee; background: #000; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>KISUK KWON</h1>
+</header>
+
+<nav>
+    <a href="#biography">VITA</a>
+    <a href="#termine">TERMINE</a>
+    <a href="#medien">MEDIEN</a>
+    <a href="#kontakt">KONTAKT</a>
+</nav>
+
+<section id="biography" class="section">
+    <h2>Biography</h2>
+    <div class="bio-container">
+        <img src="1001.jpg" alt="Kisuk Kwon" class="bio-img">
+        <div class="bio-text">
+            <p>Der aus Südkorea stammende Pianist <strong>Kisuk Kwon</strong> studierte seit 2018 Klavier an der Hochschule für Musik Detmold in der Klasse von Prof. Hartmut Schneider.</p>
+            <p>Zahlreiche Auszeichnungen bei international renommierten Klavierwettbewerben bezeugen seine künstlerische Qualität. Dazu zählt der 1. Preis beim 4. International Piano Competition 'Istanbul Orchestra Sion'. Beim 24. Internationalen Klavierwettbewerb „Mauro Paolo Monopoli“ gewann er den 1. Preis sowie den Publikumspreis.</p>
+            <p>Weitere Auszeichnungen erhielt er beim G.B. Viotti-Wettbewerb (3. Preis), A. Skrjabin-Wettbewerb (2. Preis) sowie „Palma d'Oro“ (2. Preis & Publikumspreis). Als Solist konzertiert Kisuk Kwon in verschiedenen Ländern Europas und ist Gast bei internationalen Musikfestivals.</p>
+            <p>Kisuk Kwon ist Gewinner des Steinway Förderpreis OWL, ist derzeit als Solist & Korrepetitor tätig,in Bad Füssing und  unterrichtet klavier sowie Korrepetition an der HfM Detmold</strong></p>
+        </div>
+    </div>
+</section>
+
+<section id="termine" class="section" style="background:#000;">
+    <h2>Konzerttermine</h2>
+    <table class="schedule-table">
+        <tbody>
+            <tr><td class="date-col">02. April, 17:00</td><td>Klavierabend<br><small>Bad Füssing, BVK (Bayerischer Versorgungsverband)</small></td></tr>
+            <tr><td class="date-col">05. April, 19:30</td><td>Tschaikowski: Klavierkonzert Nr. 1  bad Füssing, Großes Kulturhaus</td></tr>
+            <tr><td class="date-col">04. Juni,   19:00</td><td>Klavier & Violine  Mit Robert bálint<br><small>L.v. Beethoven: Kreuzersonate u.a.<br><small></small>Passau , Redoute</small></td></tr>
+            <tr><td class="date-col">28. Juni,   17:00</td><td>Klavierabend Bielefeld, Thomaskirche</td></tr>
+            <tr><td class="date-col">19. Juli,   17:00</td><td>Klavierabend (
+            Höxter, Jacob Pins Museum</td></tr>
+        </tbody>
+    </table>
+</section>
+<section id="medien" class="section" style="background:#000;">
+    <h2>Medien</h2>
+    <div class="bio-container">
+        <div style="width:100%; max-width:650px; aspect-ratio: 16/9; margin-bottom: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+            <iframe width="100%" height="100%" 
+ src="https://www.youtube.com/embed/9GtGmVt-Gkc" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+        </div>
+        <div class="contact-info">
+            <a href="https://youtube.com/@kisukkwon7151" target="_blank" style="text-decoration:none; color:#fff; font-weight:bold;">
+                ▶ YouTube Kanal besuchen
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="kontakt" class="section">
+    <h2>Kontakt</h2>
+    <div class="contact-info">
+        Telefon: +49 176 2961 1341<br>
+        E-Mail: <a href="mailto:misstouch11@gmail.com">misstouch11@gmail.com</a>
+        <p>Instagram: <a href="https://www.instagram.com/k1suk_kwon" target="_blank" style="text-decoration:none; color:#fff; font-weight:bold;">@k1suk_kwon</a></p>
+    </div>
+</section>
+    </div>
+    <div class="gallery">
+        <img src="1004.jpg" alt=>
+        <img src="1003.jpg" alt=>
+        <img src="1002.jpg" alt=>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 KISUK KWON. Alle Rechte vorbehalten.
+</footer>
+
+</body>
+</html>
